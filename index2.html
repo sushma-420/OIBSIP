@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puramsetti Sushma | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #101010, #1c1c3c);
+      color: #f2f2f2;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(135deg, #1f1f1f, #3a2a5a);
+      animation: fadeIn 1.5s ease-in;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #ffb400;
+      animation: slideInDown 1s ease-in-out;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #ccc;
+      animation: slideInUp 1s ease-in-out;
+    }
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 2rem auto;
+      display: block;
+      border: 4px solid #ffb400;
+      animation: zoomIn 1.2s ease;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 2s ease-in;
+    }
+    h2 {
+      color: #ffb400;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ffb400;
+      padding-bottom: 0.5rem;
+    }
+    .bio, .skills, .education, .projects, .achievements, .contact, .resume {
+      margin-bottom: 3rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #1c1c1c;
+      color: #aaa;
+    }
+    a {
+      color: #ffb400;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .highlight-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .box {
+      background: linear-gradient(135deg, #2e2e4d, #3b3b63);
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 1px solid #444;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .box h3 {
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .box p {
+      color: #ddd;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideInDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slideInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Puramsetti Sushma</h1>
+    <p>Aspiring Software Developer from IIT Roorkee</p>
+    <img src="your-photo.jpg" alt="Puramsetti Sushma" class="profile-img" />
+  </header>
+
+  <section class="bio">
+    <h2>About Me</h2>
+    <p>I am a passionate and dedicated student at IIT Roorkee, pursuing a career in software development. With a solid foundation in object-oriented programming, data structures, and computer architecture, I aim to solve real-world problems through innovative and efficient solutions. I enjoy working on interdisciplinary projects that blend electronics, programming, and system design.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: C++, Java, Verilog, HTML, CSS</li>
+      <li>Software & Tools: VS Code, LTSpice</li>
+      <li>Coursework: Object-Oriented Programming, Data Structures & Algorithms, Computer Architecture, Probability & Statistics</li>
+      <li>Languages Known: English, Hindi, Telugu</li>
+    </ul>
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>2024</strong>: B.Tech. 3rd Year, Indian Institute of Technology, Roorkee – CGPA: 7.609</li>
+      <li><strong>2022</strong>: Intermediate (Class XII), Narayana Junior College, Gudavalli  – Percentage: 92.90%</li>
+      <li><strong>2022</strong>: Matriculate (Class X), Kennedy EM H S, Sirinagar, Vijayawada – Percentage: 100%</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="highlight-boxes">
+      <div class="box">
+        <h3>Plant & Crop Disease Detection</h3>
+        <p>A hybrid model using image processing and ML to classify plant diseases for smart crop management. (IIT Roorkee)</p>
+      </div>
+      <div class="box">
+        <h3>Sum-Product Number in RISC-V</h3>
+        <p>Implemented using Ripes simulator as part of ECN-207 course under Prof. Sparsh Mittal. (IIT Roorkee)</p>
+      </div>
+      <div class="box">
+        <h3>MOSFET Amplifier Simulation</h3>
+        <p>Simulated MOSFET performance under various bias conditions using LTSpice. (IIT Roorkee)</p>
+      </div>
+      <div class="box">
+        <h3>Automated Brain Tumor Detection</h3>
+        <p>Designed a system using histopathology slides and the VGG16 deep learning model to accurately detect brain tumors, aiding in early diagnosis and improving treatment planning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="achievements">
+    <h2>Awards & Achievements</h2>
+    <ul>
+      <li>All India Rank 5138 in JEE Advanced 2022</li>
+      <li>All India Rank 5812 in JEE Mains 2022</li>
+    </ul>
+  </section>
+
+  <section class="resume">
+    <h2>Resume</h2>
+    <p><a href="My-resume-link.pdf" download>Download Resume (PDF)</a></p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: sushmapuramsetti@gmail.com</li>
+      <li>Phone: +91-7893711379</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Puramsetti Sushma. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
